@@ -1,0 +1,188 @@
+nav a {
+
+    color: rgb(220, 117, 117);
+    text-decoration: none;
+    font-size: 1.0em;
+}
+
+.navbar-nav {
+    text-decoration: none;
+    font-size: 1.0em;
+}
+
+.audio-container {
+    margin-top: 3em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+@import "bootstrap";
+
+.bg-primary {
+    background-color: orange
+}
+
+@media (min-width: 1200px) {
+    .custom-h1 {
+        font-size: 3rem;
+        /* Your new font size here */
+        font-family: 'Avenir', sans-serif;
+        color: #0f0f0e;
+        text-align: center;
+    }
+
+    .custom-h2 {
+        font-size: 2rem;
+        /* Your new font size here */
+        font-family: 'Avenir', sans-serif;
+        color: #0f0f0e;
+        text-align: center;
+
+        margin-top: 1rem;
+        /* Adjust the margin-top value to create the desired space */
+        padding: 1rem;
+        /* Add some padding to the headings for spacing */
+
+    }
+
+    .custom-h3 {
+        font-size: 1rem;
+        /* Your new font size here */
+        font-family: 'Avenir', sans-serif;
+        color: #0f0f0e;
+        text-align: center;
+    }
+}
+
+.snowflake {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(rgb(238, 126, 51), rgb(250, 243, 46));
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px white);
+}
+
+
+.footer {
+    background: #1db0f9;
+    padding: 30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+}
+
+
+.footer .row {
+    display: flex;
+    /* Use flexbox to create a horizontal layout */
+    justify-content: center;
+    /* Center-align the social icons horizontally */
+    align-items: center;
+    /* Center-align vertically */
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: rgb(255, 253, 253);
+    font-size: 1em;
+
+}
+
+.footer .row a {
+    text-decoration: none;
+    color: rgb(251, 250, 250);
+    transition: 0.5s;
+
+}
+
+.footer .row a:hover {
+    color: #fce305;
+}
+
+.footer .row ul {
+    width: 100%;
+}
+
+.footer .row ul li {
+    display: inline-block;
+    margin: 0px 30px;
+}
+
+.footer .row a i {
+    font-size: 2em;
+    margin: 0% 1%;
+    display: inline-flex;
+
+}
+
+.social-icons {
+    display: inline-flex;
+}
+
+
+/* Define the animation */
+@keyframes fade-in-left {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply the animation to the image */
+.animated-image {
+    animation: fade-in-left 3s ease-in-out;
+    /* Adjust the animation duration and timing function as needed */
+}
+
+#zeffy-donation-form {
+    display: none;
+}
+
+.cards-wrapper {
+    display: flex;
+}
+
+.card-1 {
+    margin: 0.5em;
+    width: calc(100%/3);
+}
+
+/* Style the custom control buttons */
+/*  */
+
+/* Custom CSS for responsive card layout */
+@media (min-width: 992px) {
+    .cards-wrapper .card-1 {
+        flex: 0 0 33.333%; /* Display 3 cards per row on laptop screens */
+    }
+}
+
+@media (max-width: 991px) {
+    .cards-wrapper .card-1 {
+        flex: 0 0 100%; /* Display 1 card per row on mobile screens */
+    }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    color: #000 !important; /* Change to your desired dark color */
+    top: 50% !important;
+    transform: translateY(-50%);
+}
+
+.card-columns {
+    
+    @include media-breakpoint-only(lg) {
+      column-count: 4;
+    }
+    @include media-breakpoint-only(xl) {
+      column-count: 5;
+    }
+  }
+
+
+
+
+
