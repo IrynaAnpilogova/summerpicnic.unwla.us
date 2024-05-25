@@ -77,7 +77,7 @@ function spawnSnowCSS(snowDensity = 200) {
   let snowflakeName = "snowflake";
   let rule = baseCss;
 
-  for (let i = 1; i < snowDensity; i++) {
+  for (let i = 0; i < snowDensity; i++) {
     let randomX = Math.random() * 100; // vw
     let randomOffset = Math.random() * 10 // vw;
     let randomXEnd = randomX + randomOffset;
